@@ -1,13 +1,14 @@
 #!/bin/bash
 
 echo "[+] Updating packages..."
-sudo apt update
+sudo apt update -y
+sudo apt upgrade -y
 
-echo "[+] Installing Mininet, iperf3, and dependencies..."
-sudo apt install -y mininet iperf3 python3-pip python3-venv
+echo "[+] Installing Mininet and dependencies..."
+sudo apt install -y mininet iperf3 openvswitch-switch openvswitch-testcontroller
 
-echo "[+] Installing Python packages..."
-pip3 install matplotlib pandas numpy
+echo "[+] Installing Python scientific libraries (apt-based)..."
+sudo apt install -y python3-matplotlib python3-pandas python3-numpy
 
 echo "[+] Creating project directories..."
 mkdir -p results figures
