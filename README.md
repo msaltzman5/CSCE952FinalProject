@@ -10,9 +10,9 @@ e. run:
     i. sudo apt install git  
 f. Clone this repo  
 ### 2. Run:
-./setup.sh
-make run
-make analyze
+./setup.sh  
+make run  
+make analyze  
 ### 3. View results:
 Access results/ and figures/ directories
 
