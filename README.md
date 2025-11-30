@@ -3,12 +3,12 @@
 ## Steps to run:
 ### 1. Set up ubuntu virtual machine
 a. https://ubuntu.com/download/desktop  
-b. Download VirtualBox
-c. Create new vm with iso you downloaded
-d. Start up virtual machine
-e. run:
-  i. sudo apt install git
-f. Clone this repo
+b. Download VirtualBox  
+c. Create new vm with iso you downloaded  
+d. Start up virtual machine  
+e. run:  
+  i. sudo apt install git  
+f. Clone this repo  
 ### 2. Run:
 ./setup.sh
 make run
