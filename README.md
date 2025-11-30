@@ -10,10 +10,10 @@ e. run:
     i. sudo apt install git  
 f. Clone this repo  
 ### 2. Run:
-chmod +x setup.sh  
-./setup.sh  
-make run  
-make analyze  
+```chmod +x setup.sh```  
+```./setup.sh```  
+```make run```  
+```make analyze```  
 ### 3. View results:
 Access results/ and figures/ directories
 
