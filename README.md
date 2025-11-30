@@ -2,7 +2,7 @@
 
 ## Steps to run:
 ### 1. Set up ubuntu virtual machine
-a. https://ubuntu.com/download/desktop
+a. https://ubuntu.com/download/desktop\\
 b. Download VirtualBox
 c. Create new vm with iso you downloaded
 d. Start up virtual machine
