@@ -3,7 +3,8 @@ run:
 
 analyze:
 	sudo python3 parse_iperf.py
-	sudo python3 analyze_results.py
+	sudo python3 graph_experiments_each.py
+	sudo python3 graph_experiments_summary.py
 
 clean:
 	rm -rf results/*
