@@ -39,7 +39,7 @@ class CCTopo(Topo):
 
 
 def run_experiment(args):
-    outdir = f"results/{args.cc}_bw{args.bw}_d{args.delay}_q{args.queue}_l{args.loss}"
+    outdir = f"results/{args.cc}_bw{args.bw}_d{args.delay}_q{args.queue}_l{args.loss}_r{args.round}"
     os.makedirs(outdir, exist_ok=True)
 
     topo = CCTopo(args.bw, args.delay, args.queue, args.loss)
@@ -92,4 +92,5 @@ if __name__ == "__main__":
     p.add_argument("--queue", type=int, required=True)
     p.add_argument("--loss", type=float, required=True)
     p.add_argument("--time", type=int, default=20)
+    p.add_argument("--round", type=int, default=0)
     run_experiment(p.parse_args())
