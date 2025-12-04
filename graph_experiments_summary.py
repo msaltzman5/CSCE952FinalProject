@@ -156,10 +156,15 @@ for key, cc_runs in experiments.items():
     ax_tbar.bar(x, means, yerr=stds,
                 color=[colors.get(n, "black") for n in names],
                 alpha=0.7, capsize=4)
+
     ax_tbar.set_xticks(x)
     ax_tbar.set_xticklabels(names)
     ax_tbar.set_ylabel("Average Throughput (Mbps)")
-    ax_tbar.set_title(f"Average Throughput - Bandwidth={bw}Mbps | Delay={delay} | Max Queue={queue} | Loss Rate={loss}")
+    ax_tbar.set_title(f"Average Throughput - Bandwidth={bw}Mbps | Delay={delay} | Max Queue={queue} | Loss Rate={loss}",fontsize=10)
+
+    # Dotted line at bandwidth
+    ax_tbar.axhline(y=float(bw), color="red", linestyle="--", linewidth=1.5, label=f"Bandwidth={bw} Mbps")
+    ax_tbar.legend()
 
     outpath_tbar = f"{FIGURES_SUMMARY}{EXPERIMENT}throughput_bar.png"
     fig_tbar.tight_layout()
